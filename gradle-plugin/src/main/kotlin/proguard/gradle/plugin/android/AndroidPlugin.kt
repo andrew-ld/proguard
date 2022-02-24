@@ -180,8 +180,8 @@ class AndroidPlugin(private val androidExtension: BaseExtension) : Plugin<Projec
 
     private fun verifyNotMinified(variant: BaseVariant) {
         if (variant.buildType.isMinifyEnabled) {
-            throw GradleException(
-                    "The option 'minifyEnabled' is set to 'true' for variant '${variant.name}', but should be 'false' for variants processed by ProGuard")
+            // throw GradleException(
+            //        "The option 'minifyEnabled' is set to 'true' for variant '${variant.name}', but should be 'false' for variants processed by ProGuard")
         }
     }
 
